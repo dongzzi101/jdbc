@@ -6,9 +6,13 @@ spring:
     password:
 
   jpa:
+    defer-datasource-initialization: true
     hibernate:
       ddl-auto: none
 
   h2:
     console:
       enabled: true
+  sql:
+    init:
+      mode: always
